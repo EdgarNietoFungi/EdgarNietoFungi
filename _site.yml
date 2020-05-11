@@ -20,7 +20,9 @@ navbar:
       href: papers.html
     - text: "Diseases notes/Reporte de enfermedades"
       href: notes.html
-    - text: "Blog"
+    - text: "#Rstats"
+      href: https://edgarnietofungi.github.io/blog/ 
+    - text: "Fungal Pathogens Blog"
       href: https://edgarnietofungi.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 
     - text: "Projects/Proyectos"
       href: projects.html
