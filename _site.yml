@@ -21,9 +21,9 @@ navbar:
     - text: "Diseases notes/Reporte de enfermedades"
       href: notes.html
     - text: "#Rstats"
-      href: https://edgarnietofungi.github.io/blog/ 
+      href: Rstats.html 
     - text: "Fungal Pathogens Blog"
-      href: https://edgarnietofungi.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 
+      href: Fungal Pathogens Blog.html  # CHANGE HERE OR DELETE ALL 3 LINES 
     - text: "Projects/Proyectos"
       href: projects.html
     - text: "Awards/Premios"
