@@ -30,6 +30,8 @@ navbar:
       href: awards.html
     - text: "Co-curricular"
       href: co.html
+    - text: "LifeBlog"
+      href: LifeBlog.html
     - text: "Teaching experience/Experiencia en enseñanza"
       href: teaching.html
     - icon: fa-envelope-o
