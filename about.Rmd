@@ -2,7 +2,11 @@
 title: "About myself"
 ---
 # About myself  
-# Acerca de mi   
+# Acerca de mi     
+  
+&nbsp;  
+&nbsp;
+      
 
 I am currently working as a Postdoc Researcher in Mueller's lab focusing in fungicide resistance and resistance management of the main foliar fungal diseases on soybean and corn in IA / Actualmente estoy trabajando como investigador postdoctoral Mueller's lab enfocado en resistencia a fungicidas de las principales enfermedades foliares fungosas de la soya y maiz en IA, [ISU](https://cropprotectionnetwork.org/peoples)
 

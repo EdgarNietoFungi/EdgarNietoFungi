@@ -4,6 +4,8 @@ title: "Research"
   
 # Research
 # Investigación
+&nbsp;  
+&nbsp;
   
 My currently research is focus on the identification of Cercospora spp. involved in Cercospora leaf blight and purple seed stain on soybean previously known to be caused by a solo species, _C. kikuchii_. Once the species identification is done, I will characterize them for fungicide resistance mainly for QoIs and DMIs. Also, part of the job, we are running many plot trials of fungicide efficacy for the main fungal diseases of soybean and maize. 
 
