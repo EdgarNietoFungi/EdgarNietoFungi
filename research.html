@@ -13,7 +13,7 @@
 
 <title>Research</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
@@ -132,11 +132,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -316,14 +320,22 @@ $(document).ready(function () {
 <div id="investigación" class="section level1">
 <h1>Investigación</h1>
 <p> <br />
- </p>
-<p>My currently research is focus on the identification of Cercospora
+  #Space since in the website does not look tight<br />
+My currently research is focused on the identification of Cercospora
 spp. involved in Cercospora leaf blight and purple seed stain on soybean
 previously known to be caused by a solo species, <em>C. kikuchii</em>.
 Once the species identification is done, I will characterize them for
-fungicide resistance mainly for QoIs and DMIs. Also, part of the job, we
-are running many plot trials of fungicide efficacy for the main fungal
-diseases of soybean and maize. I am along with <a
+fungicide resistance mainly for QoIs and DMIs.</p>
+<p>I am also investigating the incidence of Brown spot <em>Septoria
+glycines</em> under different management practices.</p>
+<p>I have had also the opportunity to lecture on AGRON 514 <a
+href="https://www.agonline.iastate.edu/courses/course/2022-spring/agron-514-1">Master
+Science in Agronomy ISU</a> &amp; AGRON 533 <a
+href="https://www.agonline.iastate.edu/courses/course/2021-summer/agron-533-1">Master
+Science in Agronomy ISU</a>.</p>
+<p>Also, part of the job, we are running many plot trials of fungicide
+efficacy for the main fungal diseases of soybean and maize. I am along
+with <a
 href="https://www.researchgate.net/profile/Nabin-Dangal-2">Dr. Nabin
 Kumar Dangal</a> responsible of the data collection and analyses of
 these trials.</p>
