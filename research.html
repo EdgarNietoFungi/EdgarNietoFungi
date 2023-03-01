@@ -13,7 +13,7 @@
 
 <title>Research</title>
 
-<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
@@ -47,7 +47,6 @@
 
 
 
-
 <link rel="stylesheet" href="main.css" type="text/css" />
 
 
@@ -72,9 +71,6 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
 }
 pre code {
   padding: 0;
@@ -132,15 +128,11 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -231,7 +223,7 @@ $(document).ready(function () {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -320,65 +312,14 @@ $(document).ready(function () {
 <div id="investigación" class="section level1">
 <h1>Investigación</h1>
 <p> <br />
-  My currently research is focused on the identification of Cercospora
-spp. involved in Cercospora leaf blight and purple seed stain on soybean
-previously known to be caused by a solo species, <em>C. kikuchii</em>.
-Once the species identification is done, I will characterize them for
-fungicide resistance mainly for QoIs and DMIs.</p>
-<p>I am also investigating the incidence of Brown spot <em>Septoria
-glycines</em> under different management practices.</p>
-<p>I have had also the opportunity to lecture on AGRON 514 <a
-href="https://www.agonline.iastate.edu/courses/course/2022-spring/agron-514-1">Master
-Science in Agronomy ISU</a> &amp; AGRON 533 <a
-href="https://www.agonline.iastate.edu/courses/course/2021-summer/agron-533-1">Master
-Science in Agronomy ISU</a>.</p>
-<p>Also, part of the job, we are running many plot trials of fungicide
-efficacy for the main fungal diseases of soybean and maize. I am along
-with <a
-href="https://www.researchgate.net/profile/Nabin-Dangal-2">Dr. Nabin
-Kumar Dangal</a> responsible of the data collection and analyses of
-these trials. Also MSc <a
-href="https://www.plantpath.iastate.edu/people/stith-wiggs">Stith
-Wiggs</a> is in charged of all field activities as planting, irrigation
-system, fungicide sprays, crop management and all related with the plot
-research and the experimental design. Yet <a
-href="https://www.linkedin.com/in/anna-schacher-b9a4941b7?trk=public_profile_browsemap_profile-result-card_result-card_full-click&amp;original_referer=https%3A%2F%2Fwww.google.com%2F">Anna
-Schacher</a> is in charged of all logistics.</p>
-<p>Finally, I am also currently a temporary lab manager. Graduate
-students and postdocs require highly demanding hourly help to get done
-many of their projects. The ongoing projects at the lab are root
-tracker, density population x phenotopy varieties on soybeans, and a new
-study on Mungbeans in IA, just for mention some examples.</p>
-<p>My main Mexican collaborators are <a
-href="https://agronomy.ifas.ufl.edu/people/diego-jarquin/">Dr. Diego
-Jarquin</a> and <a
-href="https://www.researchgate.net/profile/Juan-Tovar-Pedraza">Dr. Juan
-Manuel Tovar-Pedraza</a>.</p>
-<p>My doctoral research was focus on the study of risk of fungicide
-resistance emergence in <a
-href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1364-3703.2005.00316.x"><em>Sclerotinia
-sclerotiorum</em></a> known as white mold, a fungal pathogen that causes
-disease outbreaks on soybean. Keen, the aims are to determine fungicide
-sensitivity of populations from soybean; evaluate the effect of
-different fungicide applications on the sensitivity of field
-populations; and characterize the population structure and genetic
-diversity populations from soybean throughout the North Central United
-States and Mexico./ Mi investigación doctoral estuvo enfocada en el
-estudio del riesgo a la emergencia de la resistencia a fungicidas por <a
-href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1364-3703.2005.00316.x"><em>Sclerotinia
-sclerotiorum</em></a> conocido como moho blanco, un hongo fitopatógeno
-que causa enfermedad en soya. Los objetivos son, determinar la
-sensibilidad a fungicidas de poblaciones de soya; evaluar el efecto de
-diferentes aplicaciones de fungicidas en la sensibilidad de la
-poblaciones directamente en el campo; y caracterizar la estructura
-poblacional y diversidad genética de poblaciones de soya dentro Estados
-Unidos central y México</p>
-<p>My thesis title was “Fungicide Sensitivity and Population Structure
-of <em>Sclerotinia sclerotiorum</em> from Soybean in the North Central
-United States and Dry Bean in Mexico”/ El título de mi tesis fue
-“Sensibilidad a fungicidas y estructura poblacional de <em>Sclerotinia
-sclerotiorum</em> de soya en Estados Unidos central y de fríjol en
-México”.</p>
+  My currently research is focused on the identification of Cercospora spp. involved in Cercospora leaf blight and purple seed stain on soybean previously known to be caused by a solo species, <em>C. kikuchii</em>. Once the species identification is done, I will characterize them for fungicide resistance mainly for QoIs and DMIs.</p>
+<p>I am also investigating the incidence of Brown spot <em>Septoria glycines</em> under different management practices.</p>
+<p>I have had also the opportunity to lecture on AGRON 514 <a href="https://www.agonline.iastate.edu/courses/course/2022-spring/agron-514-1">Master Science in Agronomy ISU</a> &amp; AGRON 533 <a href="https://www.agonline.iastate.edu/courses/course/2021-summer/agron-533-1">Master Science in Agronomy ISU</a>.</p>
+<p>Also, part of the job, we are running many plot trials of fungicide efficacy for the main fungal diseases of soybean and maize. I am along with <a href="https://www.researchgate.net/profile/Nabin-Dangal-2">Dr. Nabin Kumar Dangal</a> responsible of the data collection and analyses of these trials. Also MSc <a href="https://www.plantpath.iastate.edu/people/stith-wiggs">Stith Wiggs</a> is in charged of all field activities as planting, irrigation system, fungicide sprays, crop management and all related with the plot research and the experimental design. Yet <a href="https://www.linkedin.com/in/anna-schacher-b9a4941b7?trk=public_profile_browsemap_profile-result-card_result-card_full-click&amp;original_referer=https%3A%2F%2Fwww.google.com%2F">Anna Schacher</a> is in charged of all logistics.</p>
+<p>Finally, I am also currently a temporary lab manager. Graduate students and postdocs require highly demanding hourly help to get done many of their projects. The ongoing projects at the lab are root tracker, density population x phenotopy varieties on soybeans, and a new study on Mungbeans in IA, just for mention some examples.</p>
+<p>My main Mexican collaborators are <a href="https://agronomy.ifas.ufl.edu/people/diego-jarquin/">Dr. Diego Jarquin</a> and <a href="https://www.researchgate.net/profile/Juan-Tovar-Pedraza">Dr. Juan Manuel Tovar-Pedraza</a>.</p>
+<p>My doctoral research was focus on the study of risk of fungicide resistance emergence in <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1364-3703.2005.00316.x"><em>Sclerotinia sclerotiorum</em></a> known as white mold, a fungal pathogen that causes disease outbreaks on soybean. Keen, the aims are to determine fungicide sensitivity of populations from soybean; evaluate the effect of different fungicide applications on the sensitivity of field populations; and characterize the population structure and genetic diversity populations from soybean throughout the North Central United States and Mexico./ Mi investigación doctoral estuvo enfocada en el estudio del riesgo a la emergencia de la resistencia a fungicidas por <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1364-3703.2005.00316.x"><em>Sclerotinia sclerotiorum</em></a> conocido como moho blanco, un hongo fitopatógeno que causa enfermedad en soya. Los objetivos son, determinar la sensibilidad a fungicidas de poblaciones de soya; evaluar el efecto de diferentes aplicaciones de fungicidas en la sensibilidad de la poblaciones directamente en el campo; y caracterizar la estructura poblacional y diversidad genética de poblaciones de soya dentro Estados Unidos central y México</p>
+<p>My thesis title was “Fungicide Sensitivity and Population Structure of <em>Sclerotinia sclerotiorum</em> from Soybean in the North Central United States and Dry Bean in Mexico”/ El título de mi tesis fue “Sensibilidad a fungicidas y estructura poblacional de <em>Sclerotinia sclerotiorum</em> de soya en Estados Unidos central y de fríjol en México”.</p>
 </div>
 
 
