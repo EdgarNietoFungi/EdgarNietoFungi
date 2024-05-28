@@ -13,7 +13,7 @@
 
 <title>LifeBlog</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
@@ -30,8 +30,8 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -41,6 +41,7 @@
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
     </style>
+
 
 
 
@@ -71,6 +72,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -128,11 +132,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -161,8 +169,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -170,16 +178,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -223,7 +224,7 @@ $(document).ready(function () {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -308,10 +309,24 @@ $(document).ready(function () {
 
 <div id="i-hope-you-all-are-well" class="section level1">
 <h1>I hope you all are well!</h1>
-<p>My first post here in my <em>Life Blog</em>, I will talk briefly about one of my latest read books .</p>
-<p>First one, I had the opportunity to revive what the colonel was experienced step by step until gets completely run out of money to buy something to eat, in the novel “<strong>El coronel no tiene quien le escriba</strong>” from the original text or “<strong>No One Writes to the Colonel</strong>” from the amazing writer <em><strong>Gabriel García Márquez</strong></em>.</p>
-<p>Two lessons gave me this book, first, how non-knowledgeable people can be and second how stubborn people can happen, even getting close the death. Many things came to mind meanwhile I was reading this book along with the person who most I love (my mom).</p>
-<p>The second book, “<strong>La Tregua/The truce</strong>” from the Uruguayan <em><strong>Mario Benedetti</strong></em>. Basically, <em>the diary of Martin Salomé</em> taught me two main things. How hugely different we see things or events during all our life. And perhaps, the most important, to live in the present because we cannot assume anything for the upcoming future, wait, does it really exist?</p>
+<p>My first post here in my <em>Life Blog</em>, I will talk briefly
+about one of my latest read books .</p>
+<p>First one, I had the opportunity to revive what the colonel was
+experienced step by step until gets completely run out of money to buy
+something to eat, in the novel “<strong>El coronel no tiene quien le
+escriba</strong>” from the original text or “<strong>No One Writes to
+the Colonel</strong>” from the amazing writer <em><strong>Gabriel García
+Márquez</strong></em>.</p>
+<p>Two lessons gave me this book, first, how non-knowledgeable people
+can be and second how stubborn people can happen, even getting close the
+death. Many things came to mind meanwhile I was reading this book along
+with the person who most I love (my mom).</p>
+<p>The second book, “<strong>La Tregua/The truce</strong>” from the
+Uruguayan <em><strong>Mario Benedetti</strong></em>. Basically, <em>the
+diary of Martin Salomé</em> taught me two main things. How hugely
+different we see things or events during all our life. And perhaps, the
+most important, to live in the present because we cannot assume anything
+for the upcoming future, wait, does it really exist?</p>
 <p>I’ll talk soon about these books:<br />
 1.<strong>Is that Fish on your Tomato?</strong><br />
 2.<strong>Men Explain Things to Me</strong> “mansplaining”<br />

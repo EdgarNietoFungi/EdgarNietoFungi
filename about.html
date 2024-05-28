@@ -13,7 +13,7 @@
 
 <title>About myself</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
@@ -30,8 +30,8 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -41,6 +41,7 @@
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
     </style>
+
 
 
 
@@ -71,6 +72,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -128,11 +132,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -161,8 +169,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -170,16 +178,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -223,7 +224,7 @@ $(document).ready(function () {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -313,20 +314,55 @@ $(document).ready(function () {
 <h1>Acerca de mi</h1>
 <p> <br />
  </p>
-<p>I am currently working as a Postdoc Researcher in <a href="https://www.plantpath.iastate.edu/people/daren-mueller">Mueller’s lab</a> focusing in fungicide resistance and resistance management of the main foliar fungal diseases on soybean and corn in IA / Actualmente estoy trabajando como investigador postdoctoral Mueller’s lab enfocado en resistencia a fungicidas de las principales enfermedades foliares fungosas de la soya y maiz en IA, <a href="https://www.plantpath.iastate.edu/people">ISU</a>. My boss leads the <a href="https://cropprotectionnetwork.org/peoples">Crop Protection Network</a></p>
-<p>I am Ph Doctor in Plant Pathology (2016-2021) from / Soy doctor en Fitopatología de (2016-2021)<a href="https://plantpathology.unl.edu">UNL</a></p>
-<p>My advisor was/ Mi consejera fue <a href="https://plantpathology.unl.edu/sydney-everhart">Sydney Everhart</a></p>
-<p>My thesis was funded by/ Mi tesis fue financiada por <a href="http://www.ncsrp.com">The North Central Soybean Research Program</a></p>
+<p>I am currently working as a Postdoc Researcher in <a
+href="https://www.plantpath.iastate.edu/people/daren-mueller">Mueller’s
+lab</a> focusing in fungicide resistance and resistance management of
+the main foliar fungal diseases on soybean and corn in IA / Actualmente
+estoy trabajando como investigador postdoctoral Mueller’s lab enfocado
+en resistencia a fungicidas de las principales enfermedades foliares
+fungosas de la soya y maiz en IA, <a
+href="https://www.plantpath.iastate.edu/people">ISU</a>. My boss leads
+the <a href="https://cropprotectionnetwork.org/peoples">Crop Protection
+Network</a></p>
+<p>I am Ph Doctor in Plant Pathology (2016-2021) from / Soy doctor en
+Fitopatología de (2016-2021)<a
+href="https://plantpathology.unl.edu">UNL</a></p>
+<p>My advisor was/ Mi consejera fue <a
+href="https://plantpathology.unl.edu/sydney-everhart">Sydney
+Everhart</a></p>
+<p>My thesis was funded by/ Mi tesis fue financiada por <a
+href="http://www.ncsrp.com">The North Central Soybean Research
+Program</a></p>
 <p>Our collaborators were/ Nuestros colaboradores fueron:<br />
-1. <a href="https://cropwatch.unl.edu/author/tamra-jackson-ziems-extension-plant-pathologist">Tamra Jackson (UNL)</a><br />
-2. <a href="https://plantpathology.unl.edu/loren-giesler">Loren Giesler (UNL)</a><br />
-3. <a href="https://www.plantpath.iastate.edu/people/daren-mueller">Daren Mueller (ISU)</a><br />
-4. <a href="https://plantpath.wisc.edu/damon-smith-2/">Damon Smith (UW-Madison)</a><br />
-5. <a href="https://www.canr.msu.edu/people/chilvers_martin">Martin Chilvers (MSU)</a></p>
-<p>My scholarhip was from Mexican government/ Mi beca fue financiada por el gobierno mexicano <a href="https://www.conacyt.gob.mx">CONACyT</a></p>
-<p>I am passionate about plant fungal pathogens. With huge tools of bioinformatics, I am fascinated about molecular genetic tools and scopes in order to get a finding that contributes to food safety for above 7 billion people where plant diseases is a great challenge/ Soy un apasionado de los hongos fitopatógenos. Con tanta diversidad en la bioinformática, me encuentro fascinado con la herramientas de genética molecular disponibles, enfocado a obtener conocimiento que contribuya con la seguridad alimentaria de poco más de 7 billones de personas, dónde las enfermedades fitopatógenas juegan un papel limitante</p>
-<p>I’m fond of Data Science. R, phyton, markdown and SQL enthusiast. Latex on basic skills/Soy un emprendedor de la ciencia de manejo de datos, R, phyton, markdown y SQL. Latex a nivel basico</p>
-<p>Active reviewer of Plant Disease Journal and Mexican Journal of Phytopathology</p>
+1. <a
+href="https://cropwatch.unl.edu/author/tamra-jackson-ziems-extension-plant-pathologist">Tamra
+Jackson (UNL)</a><br />
+2. <a href="https://plantpathology.unl.edu/loren-giesler">Loren Giesler
+(UNL)</a><br />
+3. <a
+href="https://www.plantpath.iastate.edu/people/daren-mueller">Daren
+Mueller (ISU)</a><br />
+4. <a href="https://plantpath.wisc.edu/damon-smith-2/">Damon Smith
+(UW-Madison)</a><br />
+5. <a href="https://www.canr.msu.edu/people/chilvers_martin">Martin
+Chilvers (MSU)</a></p>
+<p>My scholarhip was from Mexican government/ Mi beca fue financiada por
+el gobierno mexicano <a
+href="https://www.conacyt.gob.mx">CONACyT</a></p>
+<p>I am passionate about plant fungal pathogens. With huge tools of
+bioinformatics, I am fascinated about molecular genetic tools and scopes
+in order to get a finding that contributes to food safety for above 7
+billion people where plant diseases is a great challenge/ Soy un
+apasionado de los hongos fitopatógenos. Con tanta diversidad en la
+bioinformática, me encuentro fascinado con la herramientas de genética
+molecular disponibles, enfocado a obtener conocimiento que contribuya
+con la seguridad alimentaria de poco más de 7 billones de personas,
+dónde las enfermedades fitopatógenas juegan un papel limitante</p>
+<p>I’m fond of Data Science. R, phyton, markdown and SQL enthusiast.
+Latex on basic skills/Soy un emprendedor de la ciencia de manejo de
+datos, R, phyton, markdown y SQL. Latex a nivel basico</p>
+<p>Active reviewer of Plant Disease Journal and Mexican Journal of
+Phytopathology</p>
 </div>
 
 

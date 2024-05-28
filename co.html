@@ -13,7 +13,7 @@
 
 <title>Co-curricular</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
@@ -30,8 +30,8 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -41,6 +41,7 @@
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
     </style>
+
 
 
 
@@ -71,6 +72,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -128,11 +132,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -161,8 +169,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -170,16 +178,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -223,7 +224,7 @@ $(document).ready(function () {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -308,23 +309,40 @@ $(document).ready(function () {
 
 <div id="co-curricular" class="section level1">
 <h1>Co-curricular</h1>
-<p>I do like reading, programming, swimming, chess, photography, and soccer<br />
-Me gusta leer, la programación, la natación, el ajedrez, la fotografía y el fútbol</p>
+<p>I do like reading, programming, swimming, chess, photography, and
+soccer<br />
+Me gusta leer, la programación, la natación, el ajedrez, la fotografía y
+el fútbol</p>
 <p><strong>Activities/Actividades</strong></p>
 <ol style="list-style-type: decimal">
-<li>Treasurer, Plant Pathology Graduate Student Club of UNL/Tesorero del club de fitopatología de los estudiantes de grado de UNL, 2018-2019</li>
-<li>Secretary, Plant Pathology Graduate Student Club of UNL/Secretario del club de fitopatología de los estudiantes de grado de UNL, 2017-2018<br />
+<li>Treasurer, Plant Pathology Graduate Student Club of UNL/Tesorero del
+club de fitopatología de los estudiantes de grado de UNL, 2018-2019</li>
+<li>Secretary, Plant Pathology Graduate Student Club of UNL/Secretario
+del club de fitopatología de los estudiantes de grado de UNL,
+2017-2018<br />
 </li>
-<li>Reviewed applications for Bursary Assistance Awards for ICPP 2018/Revisión de las aplicaciones de Bursary Assistance Awards del ICPP 2018</li>
-<li>Member at Plant Pathology Graduate Student Club of UNL/Miembro del club de fitopatología de los estudiantes de grado de UNL | 2016-PRESENT</li>
-<li>Member of Toastmasters International; EC Speakers Toastmasters Club UNL/Miembro de Toastmasters International; Club EC Speakers Toastmasters UNL | 2019-Present</li>
-<li>Member at Mexican American Student Association of UNL/Miembro de la Asociación de estudiantes México-Americanos de UNL | 2017-2018<br />
+<li>Reviewed applications for Bursary Assistance Awards for ICPP
+2018/Revisión de las aplicaciones de Bursary Assistance Awards del ICPP
+2018</li>
+<li>Member at Plant Pathology Graduate Student Club of UNL/Miembro del
+club de fitopatología de los estudiantes de grado de UNL |
+2016-PRESENT</li>
+<li>Member of Toastmasters International; EC Speakers Toastmasters Club
+UNL/Miembro de Toastmasters International; Club EC Speakers Toastmasters
+UNL | 2019-Present</li>
+<li>Member at Mexican American Student Association of UNL/Miembro de la
+Asociación de estudiantes México-Americanos de UNL | 2017-2018<br />
 </li>
-<li>Volunteer in several events in Rotary Mexico-Texcoco de Gante, Mexico State/Voluntario en varios eventos de Rotary México -Texcoco de Gante, Estado de México, 2015-2016</li>
+<li>Volunteer in several events in Rotary Mexico-Texcoco de Gante,
+Mexico State/Voluntario en varios eventos de Rotary México -Texcoco de
+Gante, Estado de México, 2015-2016</li>
 </ol>
 <p><strong>Certifications/Certificaciones</strong></p>
-<p>Lifeguarding and water safety by American Red Cross/Salvavidas y Seguridad en el Agua por la Asociación Americana de Cruz Roja</p>
-<p>Pesticide Applicator License NEB 111852; Plant Pest Control Category and Non-commercial type/ Licencia para aplicar pesticidas NEB 111852; Categoria para controlar plagas agrícolas y tipo no comercial</p>
+<p>Lifeguarding and water safety by American Red Cross/Salvavidas y
+Seguridad en el Agua por la Asociación Americana de Cruz Roja</p>
+<p>Pesticide Applicator License NEB 111852; Plant Pest Control Category
+and Non-commercial type/ Licencia para aplicar pesticidas NEB 111852;
+Categoria para controlar plagas agrícolas y tipo no comercial</p>
 </div>
 
 
