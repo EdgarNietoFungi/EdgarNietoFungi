@@ -2,7 +2,7 @@
 title: "Projects"
 ---
   
-# Projects
+
 # Proyectos
 
 1. [Fungicide sensitivity monitoring for fungi affecting the main crops for Mexico/Monitoreo de la sensibilidad a fungicidas de los hongos que afectan los principales cultivos de México](https://www.researchgate.net/project/Fungicide-sensitivity-monitoring-for-fungi-affecting-the-main-crops-for-Mexico)  
