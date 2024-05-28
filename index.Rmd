@@ -8,41 +8,21 @@ title: 'Welcome to my website! '
 **Mi dos pasiones:** Ciencia y Familia (Amigos son considerados como Familia!)
 
 <img src="images/less resolution/picture35.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/IMG_0747.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/picture32.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/picture1.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/IMG_0064.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/picture29.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/picture28.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/picture27.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/picture3.jpg" style="width:45%; border:10px solid; margin-right: 20px">
+<img src="images/less resolution/picture30.jpg" style="width:45%; border:10px solid; margin-right: 20px">
 <img src="images/less resolution/picture4.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/picture5.jpg" style="width:45%; border:10px solid; margin-right: 20px">
+
+<img src="images/less resolution/picture4.jpg" style="width:45%; border:10px solid; margin-right: 20px">
+
 <img src="images/less resolution/picture26.jpg" style="width:45%; border:10px solid; margin-right: 20px">
 <img src="images/less resolution/picture27.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/picture6.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/picture7.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture8.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/picture9.jpg" style="width:45%; border:10px solid; margin-right: 20px">
-<img src="images/less resolution/picture12.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture13.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture14.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture15.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture16.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture17.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture18.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture19.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture20.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture21.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture22.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture23.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture24.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture25.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
+<img src="images/less resolution/picture28.jpg" style="width:45%; border:10px solid; margin-right: 20px">
+<img src="images/less resolution/picture29.jpg" style="width:45%; border:10px solid; margin-right: 20px">
+<img src="images/less resolution/IMG_2863.jpg" style="width:45%; border:10px solid; margin-right: 20px">
+<img src="images/less resolution/IMG_7683.jpg" style="width:45%; border:10px solid; margin-right: 20px">
+<img src="images/less resolution/picture23.jpg" style="width:45%; border:10px solid; margin-right: 20px">
+<img src="images/less resolution/IMG_0064.jpg" style="width:45%; border:10px solid; margin-right: 20px">
 
-<img src="images/less resolution/picture31.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture33.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/picture34.jpg" style="width:45%; border:10px solid; margin-right: 20px" >
-<img src="images/less resolution/IMG_0108.jpg" style="width:45%; border:10px solid; margin-right: 20px"  >
+
 
 <a class="twitter-timeline" data-lang="en" data-theme="light" align="right" height = 600 width = 300 href="https://twitter.com/EdgarNietoFungi?ref_src=twsrc%5Etfw">Tweets by EdgarNietoFungi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
