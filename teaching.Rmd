@@ -5,6 +5,8 @@ title: "Teaching Experience"
 
 # Experiencia en la Enseñanza
 
+I have had also the opportunity to lecture on [AGRON 514 Master Science in Agronomy ISU] & [AGRON 533 Master Science in Agronomy ISU] and the new merged [AGRON 544 Master Science in Agronomy ISU](https://catalog.iastate.edu/azcourses/agron/). Currently, we are working in the certification of "Quality Matters"
+
 Presented a class on data wrangling of the R Club from Agronomy & Horticulture Graduate Association (AHGSA) in fall semester 2019 at UNL/Clase presentada en reordenamiento de datos complejos a unos de fácil acceso para el posterior análisis, en el club de R de la Asociación de Graduados de Agronomía  y Horticultura en el semestre de Otoño del 2019 en UNL.
 
 Presented a class on data wrangling of the R Club from Agronomy & Horticulture Graduate Association (AHGSA) in fall semester 2018 at UNL/ Clase presentada en reordenamiento de datos complejos a unos de fácil acceso para el posterior análisis, en el club de R de la Asociación de Graduados de Agronomía  y Horticultura en el semestre de Otoño del 2018 en UNL.

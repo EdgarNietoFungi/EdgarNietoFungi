@@ -6,7 +6,14 @@ title: "Talks and Papers "
 # Pláticas y Artículos
   
   
-***corresponding author**    
+***corresponding author**   
+
+
+
+Species identification and fungicide sensitivity of fungi causing Alternaria leaf blight and head rot in cole crops in the eastern United States. 2023. **Edgar H Nieto-Lopez+**, Daniel G Cerritos-Garcia, Rachel A Koch Bach, Aparna Petkar, Christine D Smart, Christy Hoepting, David Langston, Steven Rideout, Bhabesh Dutta, Sydney E Everhart*. DOI:
+https://apsjournals.apsnet.org/doi/abs/10.1094/PDIS-06-22-1318-SC
+
+Fungicide sensitivity of _Sclerotinia sclerotiorum_ from U.S. soybean and dry bean, compared to different regions and climates. 2023. **Edgar H Nieto-Lopez**, Thomas Jose Justo Miorini, Cristian A Wulkop-Gil, Martin I. Chilvers, Loren J Giesler, Tamra A Jackson-Ziems, Mehdi Kabbage, Daren S Mueller, Damon L Smith, Juan Manuel Tovar-Pedraza, Jaime F Willbur, Sydney E Everhart*. DOI:https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4h2AK10AAAAJ&citation_for_view=4h2AK10AAAAJ:Lo8V22OuN40C
 
 R. Higgins, C. Wulkop, **E. H. Nieto-Lopez** and S. E. Everhart. 2020. Sources of white mold resistance derived from wide crosses in common bean and fungicide sensitivity of _Sclerotinia sclerotiorum_ from multi-site locations. Poster at Annual National Sclerotinia Initiative meeting in Fargo, ND.
 
@@ -34,7 +41,7 @@ North Central United States. Poster at Poster at UNL Spring Graduate Research Fa
 
 **Nieto-Lopez, E. H.**, Miorini, T. J. J., and Everhart, S. E. 2019. Fungicide sensitivity of 207 Sclerotinia sclerotiorum isolates from dry bean and soybean.2019. Annual Report of the Bean Improvement Cooperative 62: 22. USDA-ARS 24106 No. Bunn Road. http://www.bic.uprm.edu/?page_id=77
 
-Velasco-Hernandez, A., Saucedo-Veloz, C., Nieto-Angel, R., Ramirez-Guzman, M. E., Saucedo-Veloz, D., and **Nieto-Lopez, E. H**. 2017. Fruit growth, maturation, and shelf life of two cultivars of tejocote _Crataegus mexicana_ Moc. & Sessé. Fruits 04/2017; 72(2)., DOI:
+Velasco-Hernandez, A., Saucedo-Veloz, C., Nieto-Angel, R., Ramirez-Guzman, M. E., Saucedo-Veloz, D., and **Nieto-Lopez, E. H***. 2017. Fruit growth, maturation, and shelf life of two cultivars of tejocote _Crataegus mexicana_ Moc. & Sessé. Fruits 04/2017; 72(2)., DOI:
 http://www.pubhort.org/fruits/72/2/2/index.htm
 
 Nieto-Angel, R., Hernandez-Pigmeo, F., Tovar-Pedraza, J. M., Betancourt-Olvera, M., Manuel-Pinto, V., Leyva-Mir, S. G., Alonso-Henandez, L., Muniz-Merino, M., Muniz-Reyes E., Santiago-Felipe, M., and **Nieto-Lopez, E. H***. 2016. Evaluation of Traps and Attractants to Monitor _Rhagoletis pomonella_ in Tejocote _Crataegus mexicana_ in Mexico. Southwestern Entomologist 06/2016; 41(2):561-566., DOI:
