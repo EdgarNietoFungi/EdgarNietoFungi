@@ -34,6 +34,8 @@ navbar:
       href: LifeBlog.html
     - text: "Teaching experience/Experiencia en enseñanza"
       href: teaching.html
+    - text: "CV/Resume"
+      href: cv.html
     - icon: fa-envelope-o
       href: mailto:edgar.nieto@huskers.unl.edu                    # CHANGE HERE 
     - icon: fa-github fa-lg
@@ -44,9 +46,9 @@ navbar:
  
 output:
   html_document:
-    theme: united
+    #theme: united
     fig_height: 7
     fig_width: 6
-    highlight: tango
-    css: main.css
+    #highlight: tango
+    css: lucy.css
     
